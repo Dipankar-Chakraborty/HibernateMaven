@@ -28,7 +28,9 @@ public class HibernateMain
 		p.setName("AC");
 		p.setBrand("Daikin");
 		p.setPrice(30000);
+		
 		s.save(p);
+		System.out.println("Product is Saved");
 		t.commit();
 		s.close();
     }
